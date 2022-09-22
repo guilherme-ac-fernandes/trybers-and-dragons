@@ -4,18 +4,6 @@ import Fighter from './Fighter';
 import Race, { Elf } from './Races';
 import getRandomInt from './utils';
 
-export interface CharacterParams {
-  name: string,
-  race: Race,
-  archetype: Archetype,
-  maxLifePoints: number,
-  lifePoints: number,
-  strength: number,
-  defense: number,
-  dexterity: number,
-  energy?: Energy,
-}
-
 export default class Character implements Fighter {
   private _dexterity = getRandomInt(1, 10);
   private _maxLifePoints: number;
@@ -39,34 +27,13 @@ export default class Character implements Fighter {
     };
   }
 
-  public get name(): string {
-    return this._name;
-  }
-
-  public get race(): Race {
-    return this._race;
-  }
-
-  public get archetype(): Archetype {
-    return this._archetype;
-  }
-
-  public get lifePoints(): number {
-    return this._lifePoints;
-  }
-
-  public get strength(): number {
-    return this._strength;
-  }
-
-  public get defense(): number {
-    return this._defense;
-  }
-
-  public get dexterity(): number {
-    return this._dexterity;
-  }
-
+  public get name(): string { return this._name; }
+  public get race(): Race { return this._race; }
+  public get archetype(): Archetype { return this._archetype; }
+  public get lifePoints(): number { return this._lifePoints; }
+  public get strength(): number { return this._strength; }
+  public get defense(): number { return this._defense; }
+  public get dexterity(): number { return this._dexterity; }
   public get energy(): Energy {
     return { type_: this._energy.type_, amount: this._energy.amount };
   }
