@@ -1,5 +1,4 @@
 import Fighter from '../Fighter';
-import getRandomInt from '../utils';
 import Battle from './Battle';
 
 export default class PVP extends Battle {
@@ -21,9 +20,7 @@ export default class PVP extends Battle {
   fight(): number {
     while (this._playerOne.lifePoints > 0 && this._playerTwo.lifePoints > 0) {
       this._playerOne.attack(this._playerTwo);
-      this._playerTwo.receiveDamage(getRandomInt(1, this._playerOne.strength));
       this._playerTwo.attack(this._playerOne);
-      this._playerOne.receiveDamage(getRandomInt(1, this._playerTwo.strength));
     }
     const result = super.fight();
     return result;
