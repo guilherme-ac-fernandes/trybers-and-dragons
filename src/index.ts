@@ -17,6 +17,7 @@ export const monster2 = new Dragon();
 export const pvp = new PVP(player2, player3);
 export const pve = new PVE(player1, [monster1, monster2]);
 
+// Função de executar as batalhas
 export const runBattles = (battles: Battle[]): void => {
   console.log(battles);
   
