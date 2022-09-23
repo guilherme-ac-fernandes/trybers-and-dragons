@@ -27,12 +27,12 @@ export default class PVE extends Battle {
       this._enemies.forEach((enemy) => {
         enemy.attack(this._fighter);
       });
+
+      const lifeEnemies = this._enemies.filter((enemy) => enemy.lifePoints > 0);
+      this._enemyLifePoints = lifeEnemies
+        .reduce((acc, curr) => acc + curr.lifePoints, 0);
     }
 
-    const lifeEnemies = this._enemies.filter((enemy) => enemy.lifePoints > 0);
-    this._enemyLifePoints = lifeEnemies
-      .reduce((acc, curr) => acc + curr.lifePoints, 0);
-    
     const result = super.fight();
     return result;
   }

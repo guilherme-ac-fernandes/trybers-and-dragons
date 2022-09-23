@@ -19,9 +19,7 @@ export const pve = new PVE(player1, [monster1, monster2]);
 
 // Função de executar as batalhas
 export const runBattles = (battles: Battle[]): void => {
-  console.log(battles);
-  
-  // for (let i = 0; i < 50; i += 1) {
-  //   battles[i].fight();
-  // }  
+  battles.forEach((battle) => {
+    battle.fight();
+  }); 
 };
