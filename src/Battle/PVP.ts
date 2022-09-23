@@ -1,4 +1,3 @@
-import Character from '../Character';
 import Fighter from '../Fighter';
 import getRandomInt from '../utils';
 import Battle from './Battle';
