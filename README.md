@@ -1,16 +1,8 @@
-# 🚧 README em construção 🚧
+# Projeto Trybers and Dragons 🐲🏹🗡
 
-<!-- Olá, Tryber!
+Consiste em uma estrutura de classes para criação de personagens em jogos de interpretação de papéis, conhecido com RPG (Role Playing Game).
 
-Esse é apenas um arquivo inicial para o README do seu projeto.
+* Construída com Typescript
+* Utilizando as os princípios da Arquitetura SOLID e POO
+* Aplicando Arquitetura de Software, com as camadas de Modelo, Serviço e de Controladores
 
-É essencial que você preencha esse documento por conta própria, ok?
-
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-
-⚠️ IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
-
--->
