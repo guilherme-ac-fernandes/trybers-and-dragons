@@ -1,20 +1,17 @@
 import Fighter, { SimpleFighter } from '../Fighter';
-import Monster from '../Monster';
 import Battle from './Battle';
 
 export default class PVE extends Battle {
-  // private _enemyLifePoints: number;
-  constructor(
-    private _fighter: Fighter,
-    private _enemies: (Fighter | SimpleFighter)[] = [new Monster()],
-  ) {
-    super(_fighter);
-    // this._enemyLifePoints = this._enemies
-    //   .reduce((acc, curr) => acc + curr.lifePoints, 0);
+  private _fighter: Fighter;
+  private _enemies: SimpleFighter[] | Fighter[];
+  constructor(fighter: Fighter, enemies: SimpleFighter[] | Fighter[]) {
+    super(fighter);
+    this._fighter = fighter;
+    this._enemies = enemies;
   }
 
-  public get fighter(): Fighter { return this._fighter; }
-  public get enemies(): SimpleFighter[] { return this._enemies; }
+  // public get fighter(): Fighter { return this._fighter; }
+  // public get enemies(): SimpleFighter[] { return this._enemies; }
   
   fight(): number {
     this._enemies.forEach((enemy) => {
@@ -23,8 +20,6 @@ export default class PVE extends Battle {
         enemy.attack(this._fighter);
       }
     });
-
-    const result = super.fight();
-    return result;
+    return super.fight();
   }
 }

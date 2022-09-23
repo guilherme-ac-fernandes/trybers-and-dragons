@@ -7,7 +7,14 @@ import Monster from './Monster';
 export const player1 = new Character('player1');
 export const player2 = new Character('player2');
 export const player3 = new Character('player3');
-for (let i = 0; i < 50; i += 1) player1.levelUp();  
+
+player1.levelUp(); 
+player1.levelUp(); 
+player1.levelUp(); 
+player1.levelUp(); 
+player1.levelUp(); 
+player1.levelUp(); 
+player1.levelUp(); 
 
 // Monstros
 export const monster1 = new Monster();
