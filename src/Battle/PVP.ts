@@ -9,13 +9,9 @@ export default class PVP extends Battle {
     super(_playerOne);
   }
 
-  public get playerOne(): Fighter {
-    return this._playerOne;
-  }
+  public get playerOne(): Fighter { return this._playerOne; }
 
-  public get playerTwo(): Fighter {
-    return this._playerTwo;
-  }
+  public get playerTwo(): Fighter { return this._playerTwo; }
   
   fight(): number {
     while (this._playerOne.lifePoints > 0 && this._playerTwo.lifePoints > 0) {
