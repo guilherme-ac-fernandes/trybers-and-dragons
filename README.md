@@ -1,4 +1,4 @@
-# Projeto Trybers and Dragons 🐲🏹🗡
+# Projeto Trybers and Dragons 🏹🐲🗡
 
 Consiste em uma estrutura de classes para criação de personagens em jogos de interpretação de papéis, conhecido com RPG (Role Playing Game).
 
