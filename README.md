@@ -4,9 +4,8 @@ Consiste em uma estrutura de classes para criação de personagens em jogos de i
 
 * Construída com Typescript
 * Utilizando as os princípios da Arquitetura SOLID e POO
-* Aplicando Arquitetura de Software, com as camadas de Modelo, Serviço e de Controladores
 
-Nele é possível criamos persongens com a raça (anão elfo, hobbit, orc ou dragão) e podendo ter os arquétipos (mago, necromante, guarda ou guerreiro), juntamento com as informações de nome, pontos de vida, tipo de energia, destreza e defesa. Como descrito na representação abaixo:
+Nele é possível criamos persongens com a raça (anão, elfo, hobbit, orc ou dragão) e podendo ter os arquétipos (mago, necromante, guarda ou guerreiro), juntamento com as informações de nome, pontos de vida, tipo de energia, destreza e defesa. Como descrito na representação abaixo:
 
 ```
 ├─ Character/Monster
@@ -32,7 +31,7 @@ Nele é possível criamos persongens com a raça (anão elfo, hobbit, orc ou dra
 │   └─ levelUp()
 │   └─ Energy
 ```
-Com os personagens e monstros criados podemos realizar batalhas de dois tipos: personagem contra personagem ou personagem contra vários inimigos ou personagens.
+Com os personagens e monstros criados podemos realizar batalhas de dois tipos: personagem contra personagem ou personagem contra vários inimigos ou vários personagens rivais.
 
 ```
 ├─ Battle
@@ -40,32 +39,14 @@ Com os personagens e monstros criados podemos realizar batalhas de dois tipos: p
 │   └─ PVE (player versus enemies)
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ### Instruções
 
 - Para rodar o repositório localmente, realize o clone do projeto e utilize os comandos a seguir para inicializar o Docker e instalar as dependências:
 
-**Observação:** O arquivo `Trybesmith.sql` cobtém as `queries` que cria e popula o banco no MySQL.
-
 ```
 docker-compose up -d
-docker exec -it trybesmith bash
+docker exec -it trybers_and_dragons bash
 npm install // para instalar as dependências
 docker-compose down // para parar completamente a aplicação
 ```
-
-E utilize os comandos a seguir para executar a aplicação:
-
-```
-npm start // para iniciar a aplicação
-```
+Após a instalação das dependências confira os arquivos na pasta `./src`, nela consta as classes criadas para construção dos persongens. No arquivo `./src/index.ts` consta alguns exemplos. Caso deseje explorar, construir personagens e realizar batalhas, o comando `npm start` executa esse script de código no terminal.
