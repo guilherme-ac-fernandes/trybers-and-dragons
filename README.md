@@ -9,34 +9,33 @@ Nele é possível criamos persongens com a raça (anão, elfo, hobbit, orc ou dr
 
 ```
  Character/Monster
-   └─ Name
-   └─ MaxLifePoints
-   └─ LifePoints
+    └─ Archetype
+       ├─ Mage
+       ├─ Necromancer
+       ├─ Ranger
+       └─ Warrior
    └─ Defense
    └─ Dexterity
    └─ Energy
+   └─ LifePoints
+   └─ MaxLifePoints
+   └─ Name
    └─ Race
        ├─ Dwarf
        ├─ Elf
        ├─ Halfling
        ├─ Orc
        └─ Dragon
-   └─ Archetype
-       ├─ Mage
-       ├─ Necromancer
-       ├─ Ranger
-       └─ Warrior
-   └─ receiveDamage()
    └─ attack()
    └─ levelUp()
-   └─ Energy
+   └─ receiveDamage()
 ```
 Com os personagens e monstros criados podemos realizar batalhas de dois tipos: personagem contra personagem ou personagem contra vários inimigos ou vários personagens rivais.
 
 ```
  Battle
-   └─ PVP (player versus player)
    └─ PVE (player versus enemies)
+   └─ PVP (player versus player)
 ```
 
 ### Instruções
