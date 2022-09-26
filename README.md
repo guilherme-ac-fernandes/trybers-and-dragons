@@ -39,3 +39,33 @@ Com os personagens e monstros criados podemos realizar batalhas de dois tipos: p
 │   └─ PVP (player versus player)
 │   └─ PVE (player versus enemies)
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+### Instruções
+
+- Para rodar o repositório localmente, realize o clone do projeto e utilize os comandos a seguir para inicializar o Docker e instalar as dependências:
+
+**Observação:** O arquivo `Trybesmith.sql` cobtém as `queries` que cria e popula o banco no MySQL.
+
+```
+docker-compose up -d
+docker exec -it trybesmith bash
+npm install // para instalar as dependências
+docker-compose down // para parar completamente a aplicação
+```
+
+E utilize os comandos a seguir para executar a aplicação:
+
+```
+npm start // para iniciar a aplicação
+```
