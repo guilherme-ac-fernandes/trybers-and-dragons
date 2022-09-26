@@ -49,4 +49,5 @@ docker exec -it trybers_and_dragons bash
 npm install // para instalar as dependências
 docker-compose down // para parar completamente a aplicação
 ```
-Após a instalação das dependências confira os arquivos na pasta `./src`, nela consta as classes criadas para construção dos persongens. No arquivo `./src/index.ts` consta alguns exemplos. Caso deseje explorar, construir personagens e realizar batalhas, o comando `npm start` executa esse script de código no terminal.
+
+**Observação:** Após a instalação das dependências confira os arquivos na pasta `./src`, nela consta as classes criadas para construção dos persongens. No arquivo `./src/index.ts` consta alguns exemplos. Caso deseje explorar, construir personagens e realizar batalhas, o comando `npm start` executa esse script de código no terminal.
