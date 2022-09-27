@@ -3,9 +3,9 @@
 Consiste em uma estrutura de classes para criação de personagens em jogos de interpretação de papéis, conhecido com RPG (Role Playing Game).
 
 * Construída com Typescript
-* Utilizando as os princípios da Arquitetura SOLID e POO
+* Utilizando os princípios de POO e da Arquitetura SOLID
 
-Nele é possível criamos persongens com a raça (anão, elfo, hobbit, orc ou dragão) e podendo ter os arquétipos (mago, necromante, guarda ou guerreiro), juntamento com as informações de nome, pontos de vida, tipo de energia, destreza e defesa. Como descrito na representação abaixo:
+Nele é possível criar persongens com a raça (anão, elfo, hobbit, orc ou dragão) podendo ter os arquétipos (mago, necromante, guarda ou guerreiro), juntamente com as informações de nome, pontos de vida, tipo de energia, destreza e defesa. Como descrito na representação abaixo:
 
 ```
  Character/Monster
@@ -30,7 +30,7 @@ Nele é possível criamos persongens com a raça (anão, elfo, hobbit, orc ou dr
    └─ levelUp()
    └─ receiveDamage()
 ```
-Com os personagens e monstros criados podemos realizar batalhas de dois tipos: personagem contra personagem ou personagem contra vários inimigos ou vários personagens rivais.
+Com os personagens e monstros criados podemos realizar batalhas de dois tipos: personagem contra personagem ou personagem contra vários inimigos ou contra múltiplos personagens rivais.
 
 ```
  Battle
@@ -49,4 +49,4 @@ npm install // para instalar as dependências
 docker-compose down // para parar completamente a aplicação
 ```
 
-**Observação:** Após a instalação das dependências confira os arquivos na pasta `./src`, nela consta as classes criadas para construção dos persongens. No arquivo `./src/index.ts` consta alguns exemplos. Caso deseje explorar, construir personagens e realizar batalhas, o comando `npm start` executa esse script de código no terminal.
+**Observação:** Após a instalação das dependências confira os arquivos na pasta `./src`, nela consta as classes criadas para construção dos persongens. No arquivo `./src/index.ts` tem alguns exemplos e caso deseje explorar, construa personagens e realize batalhas, o comando `npm start` executa esse script de código no terminal.
