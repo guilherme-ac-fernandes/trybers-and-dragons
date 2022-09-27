@@ -9,11 +9,11 @@ Nele é possível criamos persongens com a raça (anão, elfo, hobbit, orc ou dr
 
 ```
  Character/Monster
-    └─ Archetype
-       ├─ Mage
-       ├─ Necromancer
-       ├─ Ranger
-       └─ Warrior
+   └─ Archetype
+      ├─ Mage
+      ├─ Necromancer
+      ├─ Ranger
+      └─ Warrior
    └─ Defense
    └─ Dexterity
    └─ Energy
@@ -21,11 +21,11 @@ Nele é possível criamos persongens com a raça (anão, elfo, hobbit, orc ou dr
    └─ MaxLifePoints
    └─ Name
    └─ Race
-       ├─ Dragon
-       ├─ Dwarf
-       ├─ Elf
-       ├─ Halfling
-       └─ Orc
+      ├─ Dragon
+      ├─ Dwarf
+      ├─ Elf
+      ├─ Halfling
+      └─ Orc
    └─ attack()
    └─ levelUp()
    └─ receiveDamage()
