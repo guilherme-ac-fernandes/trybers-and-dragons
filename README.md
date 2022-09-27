@@ -21,11 +21,11 @@ Nele é possível criamos persongens com a raça (anão, elfo, hobbit, orc ou dr
    └─ MaxLifePoints
    └─ Name
    └─ Race
+       ├─ Dragon
        ├─ Dwarf
        ├─ Elf
        ├─ Halfling
-       ├─ Orc
-       └─ Dragon
+       └─ Orc
    └─ attack()
    └─ levelUp()
    └─ receiveDamage()
