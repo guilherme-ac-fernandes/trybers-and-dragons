@@ -1,11 +1,11 @@
 # Projeto Trybers and Dragons 🗡🐲🏹
 
-Consiste em uma estrutura de classes para criação de personagens em jogos de interpretação de papéis, conhecido com RPG (Role Playing Game).
+Consiste em uma estrutura de classes para criação de personagens em jogos de interpretação de papéis, conhecidos como RPG (Role Playing Game).
 
 * Construída com Typescript
 * Utilizando os princípios de POO e da Arquitetura SOLID
 
-Nele é possível criar persongens com a raça (anão, elfo, hobbit, orc ou dragão) podendo ter os arquétipos (mago, necromante, guarda ou guerreiro), juntamente com as informações de nome, pontos de vida, tipo de energia, destreza e defesa. Como descrito na representação abaixo:
+Nele, é possível criar personagens com a raça (anão, elfo, hobbit, orc ou dragão) e com os arquétipos (mago, necromante, guarda ou guerreiro), juntamente com as informações de nome, pontos de vida, tipo de energia, destreza e defesa, conforme descrito na representação abaixo:
 
 ```
  Character/Monster
